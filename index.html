@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7c6b34bcfb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Menú</title>
+</head>
+<body>
+    <div class="container-xxl vw-100 p-0 m-0">
+        <div class="row h-100 p-0 m-0 bar">
+            <div class="col-1 d-flex justify-content-center align-items-center p-0 m-0">
+                <button type="button" id="show" class="btn btn-outline-primary"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container m-0 ps-2 pe-2">
+        <div class="option row ps-1 pb-1 m-0 align-items-end">
+            <p id="nav" class="p-0 m-0">Navigation</p>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="col-md-2 h-100 p-0 m-0 d-flex justify-content-center align-items-center rounded-start-1">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="col-md-10 h-100 ps-2 m-0 d-flex align-items-center rounded-end-1">
+                <p class="option-text p-0 m-0">Dashboard</p>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="col-md-2 h-100 p-0 m-0 d-flex justify-content-center align-items-center rounded-start-1">
+                <i class="fa-regular fa-message"></i>
+            </div>
+            <div class="col-md-10 h-100 ps-2 m-0 d-flex align-items-center rounded-end-1">
+                <p class="option-text p-0 m-0">Mailbox</p>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="col-md-2 h-100 p-0 m-0 d-flex justify-content-center align-items-center rounded-start-1">
+                <i class="fa-regular fa-square"></i>
+            </div>
+            <div class="col-md-10 h-100 ps-2 m-0 d-flex align-items-center rounded-end-1">
+                <p class="option-text p-0 m-0">Cards and Widgets</p>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="dropdown h-100 w-100 p-0">
+                <button class="drop p-0 w-100 h-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row p-0 m-0 h-100">
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-uikit"></i>
+                        </div>
+                        <div class="col-8 ps-2 m-0 h-100 d-flex align-items-center">
+                            <p class="option-text p-0 m-0">UI Elements</p>
+                        </div>
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item option-text" href="#">Action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Another action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="dropdown h-100 w-100 p-0">
+                <button class="drop p-0 w-100 h-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row p-0 m-0 h-100">
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-share"></i>
+                        </div>
+                        <div class="col-8 ps-2 m-0 h-100 d-flex align-items-center">
+                            <p class="option-text p-0 m-0">Navigation</p>
+                        </div>
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item option-text" href="#">Action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Another action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="dropdown h-100 w-100 p-0">
+                <button class="drop p-0 w-100 h-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row p-0 m-0 h-100">
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div class="col-8 ps-2 m-0 h-100 d-flex align-items-center">
+                            <p class="option-text p-0 m-0">Charts</p>
+                        </div>
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item option-text" href="#">Action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Another action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="dropdown h-100 w-100 p-0">
+                <button class="drop p-0 w-100 h-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row p-0 m-0 h-100">
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-file-waveform"></i>
+                        </div>
+                        <div class="col-8 ps-2 m-0 h-100 d-flex align-items-center">
+                            <p class="option-text p-0 m-0">Forms</p>
+                        </div>
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item option-text" href="#">Action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Another action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="dropdown h-100 w-100 p-0">
+                <button class="drop p-0 w-100 h-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row p-0 m-0 h-100">
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-table"></i>
+                        </div>
+                        <div class="col-8 ps-2 m-0 h-100 d-flex align-items-center">
+                            <p class="option-text p-0 m-0">Tables</p>
+                        </div>
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item option-text" href="#">Action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Another action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="dropdown h-100 w-100 p-0">
+                <button class="drop p-0 w-100 h-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row p-0 m-0 h-100">
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </div>
+                        <div class="col-8 ps-2 m-0 h-100 d-flex align-items-center">
+                            <p class="option-text p-0 m-0">Maps</p>
+                        </div>
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item option-text" href="#">Action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Another action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="dropdown h-100 w-100 p-0">
+                <button class="drop p-0 w-100 h-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="row p-0 m-0 h-100">
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div class="col-8 ps-2 m-0 h-100 d-flex align-items-center">
+                            <p class="option-text p-0 m-0">Utilities</p>
+                        </div>
+                        <div class="col-2 p-0 m-0 h-100 d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item option-text" href="#">Action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Another action</a></li>
+                    <li><a class="dropdown-item option-text" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="col-md-2 h-100 p-0 m-0 d-flex justify-content-center align-items-center rounded-start-1">
+                <i class="fa-regular fa-newspaper"></i>
+            </div>
+            <div class="col-md-10 h-100 ps-2 m-0 d-flex align-items-center rounded-end-1">
+                <p class="option-text p-0 m-0">Apps and Pages</p>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="col-md-2 h-100 p-0 m-0 d-flex justify-content-center align-items-center rounded-start-1">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="col-md-10 h-100 ps-2 m-0 d-flex align-items-center rounded-end-1">
+                <p class="option-text p-0 m-0">Layouts</p>
+            </div>
+        </div>
+        <div class="option row p-0 m-0 rounded-1">
+            <div class="col-md-2 h-100 p-0 m-0 d-flex justify-content-center align-items-center rounded-start-1">
+                <i class="fa-solid fa-sitemap"></i>
+            </div>
+            <div class="col-md-10 h-100 ps-2 m-0 d-flex align-items-center rounded-end-1">
+                <p class="option-text p-0 m-0">Sitemaps</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>
